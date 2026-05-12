@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVEUR LE DELICES | Excellence Culinaire</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for that premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SAVEUR <span>LE DELICES</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" data-key="home">Accueil</a></li>
+            <li><a href="#menu" data-key="menu">Menu</a></li>
+            <li><a href="#about" data-key="story">Notre Histoire</a></li>
+            <li><a href="#gallery" data-key="gallery">Galerie</a></li>
+            <li><a href="#location" data-key="location">Nous Trouver</a></li>
+            <li><a href="#reservation" data-key="reservations">Réservations</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="lang-toggle">
+                <span id="lang-fr" class="active">FR</span> | <span id="lang-en">EN</span>
+            </div>
+            <div class="cta">
+                <a href="#" class="btn-nav" data-key="order">Commander</a>
+            </div>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <section id="home" class="hero">
+        <!-- Background Slider -->
+        <div class="slider">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('WhatsApp Image 2026-05-12 at 2.21.59 PM.jpeg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('WhatsApp Image 2026-05-12 at 2.22.54 PM (2).jpeg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('WhatsApp Image 2026-05-12 at 2.22.54 PM (1).jpeg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('WhatsApp Image 2026-05-12 at 2.22.52 PM.jpeg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('WhatsApp Image 2026-05-12 at 2.22.56 PM (2).jpeg');"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h4 class="reveal" data-key="hero-sub">Vivez l'Art Culinaire</h4>
+            <h1 class="reveal" data-key="hero-title">Savourez l'Excellence <span class="highlight">Dorée</span></h1>
+            <p class="reveal" data-key="hero-desc">Plongez dans une fusion de saveurs traditionnelles et d'élégance moderne, préparée avec passion et servie avec âme.</p>
+            <div class="hero-btns reveal">
+                <a href="#reservation" class="btn-primary" data-key="btn-book">Réserver une Table</a>
+                <a href="#menu" class="btn-secondary" data-key="btn-menu">Explorer le Menu</a>
+            </div>
+            
+            <div class="hero-video-btn reveal">
+                <button class="play-btn" id="playVideoBtn" aria-label="Watch our story">
+                    <div class="play-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <span data-key="watch-video">Découvrir Notre Univers</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    <!-- ... existing hero section above ... -->
+
+<section id="menu" class="menu-section">
+    <div class="container">
+        <div class="section-header">
+            <h4 data-key="menu-sub">Sélection Exclusive</h4>
+            <h2 data-key="menu-title">Notre Carte Signature</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="menu-list">
+            <!-- Item 1: Ndole -->
+            <div class="menu-item reveal">
+                <div class="menu-item-left">
+                    <div class="menu-item-img">
+                        <img src="Gemini_Generated_Image_m4p3nom4p3nom4p3.png" alt="Ndolé">
+                    </div>
+                    <h3 data-key="dish1-name">Le Ndolé Royal</h3>
+                </div>
+                <div class="menu-item-right">
+                    <p data-key="dish1-desc">L'emblème du Cameroun : feuilles de ndolé, arachides fraîches et crevettes, servi avec plantains mûrs.</p>
+                    <span class="price">5,500 FCFA</span>
+                </div>
+            </div>
+
+            <!-- Item 2: Omelette -->
+            <div class="menu-item reveal">
+                <div class="menu-item-left">
+                    <div class="menu-item-img">
+                        <img src="Screenshot 2026-05-12 155658.png" alt="Omelette">
+                    </div>
+                    <h3 data-key="dish2-name">L'Omelette Signature</h3>
+                </div>
+                <div class="menu-item-right">
+                    <p data-key="dish2-desc">Une envolée de saveurs aux fines herbes, glacée au vinaigre balsamique et sa tuile croustillante.</p>
+                    <span class="price">3,000 FCFA</span>
+                </div>
+            </div>
+
+            <!-- Item 3: Braised Fish Swirls -->
+            <div class="menu-item reveal">
+                <div class="menu-item-left">
+                    <div class="menu-item-img">
+                        <img src="Screenshot 2026-05-12 155711.png" alt="Poisson Braisé">
+                    </div>
+                    <h3 data-key="dish3-name">Poisson Braisé du Littoral</h3>
+                </div>
+                <div class="menu-item-right">
+                    <p data-key="dish3-desc">Poisson frais braisé aux épices locales, accompagné de ses tourbillons de miondo et légumes croquants.</p>
+                    <span class="price">6,500 FCFA</span>
+                </div>
+            </div>
+
+            <!-- Item 4: Grilled Fish & Potatoes -->
+            <div class="menu-item reveal">
+                <div class="menu-item-left">
+                    <div class="menu-item-img">
+                        <img src="Screenshot 2026-05-12 155718.png" alt="Grilled Fish">
+                    </div>
+                    <h3 data-key="dish4-name">Capitaine Grillé aux Herbes</h3>
+                </div>
+                <div class="menu-item-right">
+                    <p data-key="dish4-desc">Entier et savoureux, grillé lentement et servi avec des pommes de terre rissolées au romarin.</p>
+                    <span class="price">8,000 FCFA</span>
+                </div>
+            </div>
+
+            <!-- Item 5: Spaghetti -->
+            <div class="menu-item reveal">
+                <div class="menu-item-left">
+                    <div class="menu-item-img">
+                        <img src="Screenshot 2026-05-12 155728.png" alt="Spaghetti">
+                    </div>
+                    <h3 data-key="dish5-name">Pasta à la Bolognaise</h3>
+                </div>
+                <div class="menu-item-right">
+                    <p data-key="dish5-desc">Une sauce riche mijotée pendant 6 heures, basilic frais et parmesan pour une touche d'Italie.</p>
+                    <span class="price">4,500 FCFA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-wrapper">
+            <div class="about-image reveal">
+                <div class="image-frame">
+                    <img src="chef.png" alt="Notre Chef Exécutif">
+                    <div class="experience-badge">
+                        <span class="years">25+</span>
+                        <span class="text">Années d'Excellence</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content reveal">
+                <div class="section-header-left">
+                    <h4 data-key="about-sub">Notre Histoire</h4>
+                    <h2 data-key="about-title">Une Passion Héritée,<br>Un Savoir-Faire D'exception</h2>
+                    <div class="line"></div>
+                </div>
+                <p data-key="about-desc1" class="lead-text">
+                    Depuis plus de deux décennies, Saveur Le Delices incarne l'excellence de la gastronomie camerounaise revisitée. Notre chef exécutif, formé dans les plus grandes maisons de Paris et Lyon, a façonné une cuisine qui honore les traditions tout en embrassant l'innovation.
+                </p>
+                <p data-key="about-desc2">
+                    Chaque plat raconte une histoire — celle des marchés locaux de Douala, des épices ancestrales transmises de génération en génération, et d'une vision audacieuse qui place le Cameroun sur la carte culinaire mondiale. Nous croyons que la gastronomie est un art, et chaque repas chez nous est une œuvre d'art.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15K+</span>
+                        <span class="stat-label">Clients Satisfaits</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Plats Signature</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Note Moyenne</span>
+                    </div>
+                </div>
+                <a href="#gallery" class="btn-primary" data-key="about-cta">Découvrir Notre Histoire</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <div class="section-header">
+            <h4 data-key="gallery-sub">Nos Moments</h4>
+            <h2 data-key="gallery-title">Galerie d'Excellence</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all" data-key="gallery-all">Tout</button>
+            <button class="filter-btn" data-filter="plats" data-key="gallery-dishes">Plats</button>
+            <button class="filter-btn" data-filter="ambiance" data-key="gallery-ambiance">Ambiance</button>
+            <button class="filter-btn" data-filter="evenements" data-key="gallery-events">Événements</button>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="plats">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Plats</span>
+                        <h3>Ndolé Royal</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.21.58 PM (1).jpeg" alt="Plat Signature">
+            </div>
+            
+            <div class="gallery-item" data-category="ambiance">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Ambiance</span>
+                        <h3>Notre Salle</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.21.58 PM.jpeg" alt="Ambiance">
+            </div>
+            
+            <div class="gallery-item large" data-category="plats">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Plats</span>
+                        <h3>Création du Chef</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.21.59 PM.jpeg" alt="Plat Signature">
+            </div>
+            
+            <div class="gallery-item" data-category="evenements">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Événements</span>
+                        <h3>Dîner Privé</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.22.27 PM.jpeg" alt="Événement">
+            </div>
+            
+            <div class="gallery-item" data-category="plats">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Plats</span>
+                        <h3>Poisson Braisé</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.22.52 PM (2).jpeg" alt="Poisson">
+            </div>
+            
+            <div class="gallery-item" data-category="ambiance">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Ambiance</span>
+                        <h3>Détails Élégants</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.22.52 PM.jpeg" alt="Ambiance">
+            </div>
+            
+            <div class="gallery-item large" data-category="evenements">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Événements</span>
+                        <h3>Célébrations</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.22.53 PM (2).jpeg" alt="Événement">
+            </div>
+            
+            <div class="gallery-item" data-category="plats">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Plats</span>
+                        <h3>Spécialités</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.22.53 PM.jpeg" alt="Plats">
+            </div>
+            
+            <div class="gallery-item" data-category="ambiance">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-category">Ambiance</span>
+                        <h3>Élégance</h3>
+                    </div>
+                </div>
+                <img src="gallery/WhatsApp Image 2026-05-12 at 2.22.55 PM.jpeg" alt="Ambiance">
+            </div>
+        </div>
+        
+        <div class="gallery-cta">
+            <a href="#" class="btn-secondary" data-key="gallery-cta" onclick="alert('Plus de photos disponibles bientôt!')">Voir Plus de Photos</a>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-nav lightbox-prev">&#8249;</button>
+    <button class="lightbox-nav lightbox-next">&#8250;</button>
+    <div class="lightbox-content">
+        <img src="" alt="Gallery Image">
+        <div class="lightbox-caption"></div>
+    </div>
+</div>
+
+<!-- Video Modal -->
+<div class="video-modal" id="videoModal">
+    <button class="video-modal-close" id="closeVideoModal" aria-label="Close video">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+    </button>
+    <div class="video-modal-content">
+        <div class="video-container">
+            <video id="heroVideo" controls>
+                <source src="videos/WhatsApp Video 2026-05-12 at 2.22.28 PM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-info">
+            <h3 data-key="video-title">L'Excellence en Mouvement</h3>
+            <p data-key="video-desc">Découvrez l'art culinaire qui fait la renommée de Saveur Le Delices</p>
+        </div>
+    </div>
+</div>
+
+<section id="reservation" class="reservation-section">
+    <div class="container">
+        <div class="reservation-wrapper">
+            <div class="reservation-image reveal">
+                <div class="image-wrapper">
+                    <img src="Reservation form image/WhatsApp Image 2026-05-12 at 2.22.27 PM (1).jpeg" alt="Réservation">
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <span class="icon">✦</span>
+                            <h3 data-key="reservation-img-title">Réservez Votre Table</h3>
+                            <p data-key="reservation-img-desc">Une expérience gastronomique inoubliable vous attend</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reservation-form-wrapper reveal">
+                <div class="form-header">
+                    <h4 data-key="reservation-sub">Réservations</h4>
+                    <h2 data-key="reservation-title">Réservez Votre Expérience</h2>
+                    <div class="line"></div>
+                    <p data-key="reservation-desc">Réservez votre table pour une soirée mémorable dans notre établissement. Nous vous recommandons de réserver au moins 48 heures à l'avance pour les week-ends.</p>
+                </div>
+                
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-key="form-name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-key="form-email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" data-key="form-phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+237 6XX XXX XXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests" data-key="form-guests">Nombre de Personnes</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Sélectionner</option>
+                                <option value="1">1 Personne</option>
+                                <option value="2">2 Personnes</option>
+                                <option value="3">3 Personnes</option>
+                                <option value="4">4 Personnes</option>
+                                <option value="5">5 Personnes</option>
+                                <option value="6">6 Personnes</option>
+                                <option value="7">7 Personnes</option>
+                                <option value="8">8+ Personnes</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date" data-key="form-date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time" data-key="form-time">Heure</label>
+                            <select id="time" name="time" required>
+                                <option value="">Sélectionner</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="occasion" data-key="form-occasion">Occasion Spéciale</label>
+                        <select id="occasion" name="occasion">
+                            <option value="">Sélectionner une occasion (optionnel)</option>
+                            <option value="anniversaire" data-key="occasion-anniversary">Anniversaire</option>
+                            <option value="rdv" data-key="occasion-date">Rendez-vous Romantique</option>
+                            <option value="affaires" data-key="occasion-business">Dîner d'Affaires</option>
+                            <option value="famille" data-key="occasion-family">Réunion de Famille</option>
+                            <option value="autre" data-key="occasion-other">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message" data-key="form-message">Demandes Spéciales</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Allergies, préférences alimentaires, ou demandes particulières..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit" data-key="form-submit">
+                        <span>Confirmer la Réservation</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="location" class="location-section">
+    <div class="container">
+        <div class="section-header">
+            <h4 data-key="location-sub">Notre Adresse</h4>
+            <h2 data-key="location-title">Nous Trouver</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="location-content">
+            <div class="location-info">
+                <div class="info-card reveal">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 data-key="location-address-title">Adresse</h3>
+                    <p data-key="location-address">SAVEUR LES DÉLICES<br>Douala, Cameroun</p>
+                </div>
+                
+                <div class="info-card reveal">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-key="location-phone-title">Téléphone</h3>
+                    <p data-key="location-phone">+237 697 093 XXX</p>
+                </div>
+                
+                <div class="info-card reveal">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                    </div>
+                    <h3 data-key="location-hours-title">Horaires</h3>
+                    <p data-key="location-hours">Lun - Dim<br>12:00 - 23:00</p>
+                </div>
+            </div>
+            
+            <div class="map-container reveal">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15918.758430897386!2d9.6601731!3d4.069565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106113593ea3542d%3A0x467845c37186b343!2sSAVEUR%20LES%20D%C3%89LICES!5e0!3m2!1sen!2scm!4v1704067200000!5m2!1sen!2scm"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-overlay">
+                    <a href="https://www.google.com/maps/dir//SAVEUR+LES+D%C3%89LICES,+Douala,+Cameroon" 
+                       target="_blank" 
+                       class="btn-directions" 
+                       data-key="btn-directions">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/>
+                        </svg>
+                        Obtenir l'Itinéraire
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ... footer or scripts ... -->
+
+    <script src="script.js"></script>
+</body>
+</html>
