@@ -835,6 +835,134 @@ body {
     box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
 }
 
+/* --- OPENING HOURS SECTION --- */
+.hours-section {
+    padding: 100px 8%;
+    background: var(--dark-bg);
+    position: relative;
+}
+
+.hours-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+}
+
+.hours-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hours-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--pure-white);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hours-row:last-child {
+    border-bottom: none;
+}
+
+.hours-day {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--pure-white);
+}
+
+.hours-time {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-yellow);
+}
+
+.hours-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 50px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hours-status.open {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.hours-status.closed {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.hours-status::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+@media (max-width: 768px) {
+    .hours-section {
+        padding: 60px 5%;
+    }
+    
+    .hours-card {
+        padding: 30px 25px;
+    }
+    
+    .hours-card h3 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+    
+    .hours-row {
+        padding: 12px 0;
+    }
+    
+    .hours-day,
+    .hours-time {
+        font-size: 0.95rem;
+    }
+    
+    .hours-status {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+}
+
 /* Lightbox */
 .lightbox {
     display: none;

@@ -6,6 +6,7 @@
     <title>SAVEUR LE DELICES | Excellence Culinaire</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-app.css">
     <!-- Google Fonts for that premium look -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -48,7 +49,7 @@
 
         <!-- Hero Content -->
         <div class="hero-content">
-            <h4 class="reveal" data-key="hero-sub">Vivez l'Art Culinaire</h4>
+    
             <h1 class="reveal" data-key="hero-title">Savourez l'Excellence <span class="highlight">Dorée</span></h1>
             <p class="reveal" data-key="hero-desc">Plongez dans une fusion de saveurs traditionnelles et d'élégance moderne, préparée avec passion et servie avec âme.</p>
             <div class="hero-btns reveal">
@@ -66,7 +67,7 @@
                     <span data-key="watch-video">Découvrir Notre Univers</span>
                 </button>
             </div>
-        </div>
+        </div><br>
 
         <!-- Slider Dots -->
         <div class="slider-dots">
@@ -318,6 +319,45 @@
     </div>
 </section>
 
+<section id="hours" class="hours-section">
+    <div class="container">
+        <div class="hours-card">
+            <h3 data-key="hours-title">Horaires d'Ouverture</h3>
+            <div class="hours-list">
+                <div class="hours-row">
+                    <span class="hours-day" data-key="day-mon">Lundi</span>
+                    <span class="hours-time">12:00 - 22:30</span>
+                </div>
+                <div class="hours-row">
+                    <span class="hours-day" data-key="day-tue">Mardi</span>
+                    <span class="hours-time">12:00 - 22:30</span>
+                </div>
+                <div class="hours-row">
+                    <span class="hours-day" data-key="day-wed">Mercredi</span>
+                    <span class="hours-time">12:00 - 22:30</span>
+                </div>
+                <div class="hours-row">
+                    <span class="hours-day" data-key="day-thu">Jeudi</span>
+                    <span class="hours-time">12:00 - 22:30</span>
+                </div>
+                <div class="hours-row">
+                    <span class="hours-day" data-key="day-fri">Vendredi</span>
+                    <span class="hours-time">12:00 - 23:30</span>
+                </div>
+                <div class="hours-row">
+                    <span class="hours-day" data-key="day-sat">Samedi</span>
+                    <span class="hours-time">12:00 - 23:30</span>
+                </div>
+                <div class="hours-row">
+                    <span class="hours-day" data-key="day-sun">Dimanche</span>
+                    <span class="hours-time">12:00 - 21:00</span>
+                </div>
+            </div>
+            <div class="hours-status open" data-key="hours-open">Ouvert Maintenant</div>
+        </div>
+    </div>
+</section>
+
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox">
     <button class="lightbox-close">&times;</button>
@@ -528,6 +568,7 @@
 
 <!-- ... footer or scripts ... -->
 
+<script src="mobile-app.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
