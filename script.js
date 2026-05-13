@@ -1,3 +1,13 @@
+// Loading Spinner - Hide when page loads
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 800); // Show loader for at least 800ms
+    }
+});
+
 // Translation Data
 const langData = {
     fr: {
